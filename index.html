@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪愛延續 - 暖心攝影展</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Microsoft JhengHei, sans-serif;
+            background: linear-gradient(rgba(255, 230, 230, 0.8), rgba(255, 230, 230, 0.8)), 
+                        url('https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=2083&auto=format&fit=crop'); /* 木質紋路背景圖 */
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: #7d5a50;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #b5838d;
+        }
+
+        .btn {
+            background-color: #ffb4a2;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e5989b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>浪愛延續：霓霓與牠的朋友們</h1>
+        <p>每一張照片，都是一個等待溫暖的故事</p>
+    </header>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=500" alt="霓霓">
+            <h3>霓霓 (一)</h3>
+            <p>在午後陽光下小憩的日常。</p>
+            <a href="profile.html" class="btn">了解更多</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=500" alt="霓霓">
+            <h3>霓霓 (二)</h3>
+            <p>溫柔的眼神，正等待著你的關懷。</p>
+            <a href="profile.html" class="btn">了解更多</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=500" alt="霓霓">
+            <h3>霓霓 (三)</h3>
+            <p>紀錄在公園角落的堅韌生命。</p>
+            <a href="profile.html" class="btn">了解更多</a>
+        </div>
+    </div>
+
+</body>
+</html>
